@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Big Shoulders Display";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card {
+  padding: 40px;
+}
+
+.card h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  padding-right: 50px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card a {
+  padding: 13px 50px;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  color: none;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 100px;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.card a:hover {
+  padding: 13px 50px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 100px;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.card1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+.card2 a {
+  color: hsl(184, 100%, 22%);
+}
+
+.card3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin: 1em;
+  }
+}
